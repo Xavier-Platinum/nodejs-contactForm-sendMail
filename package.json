@@ -1,0 +1,18 @@
+{
+  "name": "send-mail",
+  "version": "1.0.0",
+  "description": "Send mail",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Mail",
+    "nodejs"
+  ],
+  "author": "Kwis Lawrence Francis",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.5.0"
+  }
+}
