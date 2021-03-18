@@ -4,21 +4,21 @@ const nodemailer = require("nodemailer");
 const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-        user: process.env.EMAIL,
-        pass: process.env.PASSWORD
+        user: "drrenimusic@gmail.com",
+        pass: "@ccesscontrol00"
     }
 });
 
 let mailOptions = {
-    from: "choji@gmail.com",
-    to: "kwislawrencekwis@gmail.com",
+    from: "kwislawrencekwis@gmail.com",
+    to: "drrenimusic@gmail.com",
     subject: "Hi!! Just testing",
-    test: "If you get this message then it works",
+    text: "If you get this message then it works",
 }
 
 transporter.sendMail(mailOptions, (err, data) => {
     if (err) {
-        console.log("An error occured");
+        console.log("An error occured", err);
     } else {
         console.log("Email Sent!!!!!")
     }
